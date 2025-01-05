@@ -1,0 +1,37 @@
+{
+	"Actor": {},
+	"Item": {
+		"types": [
+			"Weapon",
+			"Armor",
+			"Gear"
+		],
+		"templates": {
+			"basicItem": {
+				"description": "",
+				"cost": 0,
+				"weight": 0
+			}
+		}
+		"Weapon": {
+			"templates": ["basicItem"],
+			"damage": 1,
+			"toHitStat": "str.mod",
+			"damageBonus": "",
+			"damageType": "Bludgeoning",
+			"range": 0,
+			"qualities": [],
+			"size": "small",
+			"type": "melee"
+		},
+		"Armor": {
+			"templates": ["basicItem"],
+			"bonusAC": 0,
+			"maxDex": 10,
+			"type": "light"
+		},
+		"Gear": {
+			"templates": ["basicItem"]
+		}
+	}
+}
