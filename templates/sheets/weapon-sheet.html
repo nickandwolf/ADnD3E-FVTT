@@ -3,4 +3,55 @@
 		<img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64" />
 		<h1><input name="name" type="text" value="{{item.name}}" placeholder="Name" /></h1>
 	</header>
+	<div>
+		<table>
+			<tr>
+				<th>{{localize "ADnD3E.weapon.damageType}}</th>
+				<th>{{localize "ADnD3E.weapon.toHitStat}}</th>
+				<th>{{localize "ADnD3E.weapon.damageBonus}}</th>
+				<th>{{localize "ADnD3E.weapon.damage}}</th>
+				<th>{{localize "ADnD3E.weapon.magical}}</th>
+				<th>{{localize "ADnD3E.weapon.magicalBonus}}</th>
+				<th>{{localize "ADnD3E.weapon.range}}</th>
+				<th>{{localize "ADnD3E.weapon.qualities}}</th>
+				<th>{{localize "ADnD3E.weapon.size}}</th>
+			</tr>
+			<tr>
+				<td>
+					<select name="data.damageType">
+						{{#select data.damageType}}
+						{{#each config.damageType as |name type|}}
+						<option value="{{type}}">{{name}}</option>"
+						{{/each}}
+						{{/select}}
+					</select>
+				</td>
+				<td>
+					<select name="data.toHitStat">
+						{{#select data.toHitStat}}
+						{{#each config.toHitStat as |name type|}}
+						<option value="{{type}}">{{name}}</option>"
+						{{/each}}
+						{{/select}}
+					</select>
+				</td>
+				<td>
+					<select name="data.damageBonus">
+						{{#select data.damageBonus}}
+						{{#each config.damageBonus as |name type|}}
+						<option value="{{type}}">{{name}}</option>"
+						{{/each}}
+						{{/select}}
+					</select>
+				</td>
+				<td>
+					<input name="data.damage" type="text" value="{{data.damage}}" data-dtype="Number" />
+				</td>
+				<td>
+					<input name="data.magical" type="checkbox" {{checked data.magical}} />
+				</td>
+			</tr>
+		</table>
+		{{editor content=data.description target="data.description" button=true owner=owner editable=editable}}
+	</div>
 </form>

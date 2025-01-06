@@ -1,0 +1,13 @@
+{
+    "ADnD3E": {
+        "damageType": "Damage Type",
+        "toHitStat": "Stat Bonus to Attack",
+        "damageBonus": "Stat Bonus to Damage",
+        "damage": "Damage",
+        "magical": "Magical",
+        "magicalBonus": "Magic Bonus",
+        "range": "Range",
+        "qualities": "Qualities",
+        "size": "Size"
+    }
+}

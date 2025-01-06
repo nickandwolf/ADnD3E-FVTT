@@ -12,17 +12,18 @@
 				"cost": 0,
 				"weight": 0
 			}
-		}
+		},
 		"Weapon": {
 			"templates": ["basicItem"],
-			"damage": 1,
-			"toHitStat": "str.mod",
+			"damageType": ["Bludgeoning"],
+			"toHitStat": "strength",
 			"damageBonus": "",
-			"damageType": "Bludgeoning",
+			"damage": 1,
+			"magical": false,
+			"magicalBonus": 0,
 			"range": 0,
 			"qualities": [],
-			"size": "small",
-			"type": "melee"
+			"size": "small"
 		},
 		"Armor": {
 			"templates": ["basicItem"],

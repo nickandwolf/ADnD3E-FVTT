@@ -3,7 +3,7 @@
 	"title": "Advanced Dungeons & Dragons - Third Edition",
 	"description": "A fictional ruleset to play a TSR published version of the most popular advanced fantasy role-playing game in the world.",
 	"author": "Nick&Wolf",
-	"version": 0.0.1,
+	"version": "0.0.1",
 	"minimumCoreVersion": "12.331",
 	"compatibleCoreVersion": "12.311",
 	"esmodules": [
@@ -16,7 +16,11 @@
 		
 	],
 	"languages": [
-		
+		{
+			"lang": "en",
+			"name": "English",
+			"path": "lang/en.js"
+		}
 	],
 	"gridDistance": 5,
 	"gridUnits": "ft",
