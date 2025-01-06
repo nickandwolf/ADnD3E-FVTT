@@ -2,10 +2,17 @@
 	"name": "ADnD3E",
 	"title": "Advanced Dungeons & Dragons - Third Edition",
 	"description": "A fictional ruleset to play a TSR published version of the most popular advanced fantasy role-playing game in the world.",
-	"author": "Nick&Wolf",
+	"authors": [{
+		"name": "Nick&Wolf",
+		"url": "none",
+		"email": "none",
+		"discord": "none"
+	}],
 	"version": "0.0.1",
-	"minimumCoreVersion": "12.331",
-	"compatibleCoreVersion": "12.311",
+	"compatibility": {
+		"minimum": 12,
+		"verified": 12
+	},
 	"esmodules": [
 		"adnd3e.js"
 	],
@@ -22,8 +29,21 @@
 			"path": "lang/en.json"
 		}
 	],
-	"gridDistance": 5,
-	"gridUnits": "ft",
+	"grid": {
+		"distance": 5,
+		"units": "ft"
+	},
 	"primaryTokenAttribute": "HP",
-	"initiative": "1d20 + @dex.mod"
+	"initiative": "1d20 + @dex.mod",
+	"documentTypes": {
+		"Actor": {
+			"PC": {"htmlFields": []},
+			"NPC": {"htmlFields": []},
+			"monster": {}
+		},
+		"Item": {
+			"weapon": {},
+			"armor": {}
+		}
+	}
 }
